@@ -1,0 +1,5 @@
+  windows_updates::kb {'Some cool KB!':
+    ensure => 'present',
+    kb => 'KB4012213'
+    kb => 'KB4012216'
+  }
