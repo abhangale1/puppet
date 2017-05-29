@@ -8,4 +8,5 @@ node 'linuxagent.example.com' {
 node 'windowsagent.example.com' {
   include iisserver
   include cron-puppet
+  include critical_policy
   }
