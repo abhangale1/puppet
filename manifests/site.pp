@@ -14,4 +14,4 @@ node 'windowsagent.example.com' {
 
   node 'sample-instance' {
     include New EC2_TestInstance
-  }
+}
