@@ -11,3 +11,7 @@ node 'windowsagent.example.com' {
   include critical_policy
   include puppet-windows_updates-master
   }
+
+  node 'sample-instance' {
+    include New EC2_TestInstance
+  }
