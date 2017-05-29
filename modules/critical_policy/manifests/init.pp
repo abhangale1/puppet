@@ -11,4 +11,11 @@ class critical_policy {
      value => 'legalnoticetext',
      data  => 'Login constitutes acceptance of the End User Agreement',
      }
+
+     registry::value { 'Allow Windows Update to Forcibly reboot':
+     key   => 'HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU',
+     value => 'NoAutoRebootWithLoggedOnUsers',
+     type  => 'dword',
+     data  => '0',
+     }
    }
